@@ -10,7 +10,7 @@
 
     <meta name="description" content="@yield('meta_description', 'Platform katalog karya dan portofolio kreatif mahasiswa. Temukan berbagai karya inovatif mulai dari UI/UX, Web Development, Desain Grafis, hingga Animasi 3D.')">
 
-    <!-- Google Fonts: Inter -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -18,33 +18,30 @@
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Font Awesome 6 -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}?v=2">
+    <link rel="stylesheet" href="/css/style.css?v=3">
 
     @stack('styles')
 </head>
 
 <body>
 
-    <!-- Navbar -->
     @include('partials.navbar')
 
-    <!-- Main Content -->
     <main>
         @yield('content')
     </main>
 
-    <!-- Footer -->
     @include('partials.footer')
 
-    <!-- Bootstrap 5 JS Bundle -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom App JS -->
-    <script src="{{ asset('js/main.js') }}?v=2"></script>
+    <!-- Custom JS -->
+    <script src="/js/main.js?v=3"></script>
 
     @stack('scripts')
 
